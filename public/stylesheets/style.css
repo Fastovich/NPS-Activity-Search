@@ -1,0 +1,97 @@
+:root {
+  --bgImage: url(../images/denali-mtn-range.jpg);
+}
+
+body {
+  margin-top: 1rem;
+  background-color: rgb(241, 238, 238);
+
+}
+
+.picBackground {
+  background: var(--bgImage);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ol {
+  list-style-type: square;
+}
+
+.card {
+  flex: auto;
+  padding: 10px;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#weatherCard {
+  display: none;
+  width: 250px;
+}
+
+#webCamCard {
+  width: 250px;
+  display: none;
+}
+#webCamImg {
+  width: 100%;
+  margin: 0;
+}
+  
+.dropdownBox {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-top:2rem;
+}
+
+#startCard {
+  background-color: rgb(241,238,238);
+  margin-top: 15%;
+}
+
+@media only screen and (max-width: 992px){
+  .row {
+      display:flex;
+      flex-direction: column-reverse;
+
+  }
+  .leftSide{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  #startCard {
+      margin-top:10%;
+  }
+}
+
+h4{
+  text-align: center;
+  border-style: double;
+  font-weight: bold;
+  border-radius: 15px 50px 30px;
+  background: #3397b6;
+}
+.list-group{
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+data-state{
+  text-align: center;
+}
+#IsOutput{
+  border-radius: 16px;
+  box-shadow: 10px 10px 8px #888888;
+}
+section{
+  text-align: center;
+}

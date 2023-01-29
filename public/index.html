@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find your park!</title>
+  </head>
+
+  <body class="picBackground">
+    <div class="row">
+      <div class="col s12 m8 l4 offset-m2 offset-l6">
+        <div class="card" id="startCard">
+          <div class="card-content">
+            <h4 style="text-align: center; border-style:double; border-radius: 15px 50px 30px; background: #3397b6;">Visit the Beautiful<br> National Park System</h4>
+            <h6 style="text-align: center; font-weight:bold;font-style: italic;">Visiting a new state?</h5>
+            <h7><b>Search here to find the national park system that has what you want to do!</b> 
+              <div style="text-align: center; font-style: italic;">In one quick search you can access:</div>
+              <ol> 
+                <li>List national parks in the state you choose to visit with the activites you select. </li>
+                <li>Access the NPS website for that park straight from the search results.</li>
+                <li>Link provided to a map to obtain directions.</li>
+                <li>See what the weather will be like so you can arrive prepared for adventure!</li>
+              </ol>
+            <form>
+              <div class="input-field">
+                <select class="browser-default dropdownBox" id="stateName">
+                  <option value="" disabled selected>Choose Your State</option>
+                  <option value="AL Alabama">Alabama</option>
+                  <option value="AK Alaska">Alaska</option>
+                  <option value="AZ Arizona">Arizona</option>
+                  <option value="AR Arkansas">Arkansas</option>
+                  <option value="CA California">California</option>
+                  <option value="CO Colorado">Colorado</option>
+                  <option value="CT Connecticut">Connecticut</option>
+                  <option value="DE Delaware">Delaware</option>
+                  <option value="FL Florida">Florida</option>
+                  <option value="GA Georgia">Georgia</option>
+                  <option value="HI Hawaii">Hawaii</option>
+                  <option value="ID Idaho">Idaho</option>
+                  <option value="IL Illinois">Illinois</option>
+                  <option value="IN Indiana">Indiana</option>
+                  <option value="IA Iowa">Iowa</option>
+                  <option value="KS Kansas">Kansas</option>
+                  <option value="KY Kentucky">Kentucky</option>
+                  <option value="LA Louisiana">Louisiana</option>
+                  <option value="ME Maine">Maine</option>
+                  <option value="MD Maryland">Maryland</option>
+                  <option value="MA Massachusetts">Massachusetts</option>
+                  <option value="MI Michigan">Michigan</option>
+                  <option value="MN Minnesota">Minnesota</option>
+                  <option value="MS Mississippi">Mississippi</option>
+                  <option value="MO Missouri">Missouri</option>
+                  <option value="MT Montana">Montana</option>
+                  <option value="NE Nebraska">Nebraska</option>
+                  <option value="NV Nevada">Nevada</option>
+                  <option value="NH New Hampshire">New Hampshire</option>
+                  <option value="NJ New Jersey">New Jersey</option>
+                  <option value="NM New Mexico">New Mexico</option>
+                  <option value="NY New York">New York</option>
+                  <option value="NC North Carolina">North Carolina</option>
+                  <option value="ND North Dakota">North Dakota</option>
+                  <option value="OH Ohio">Ohio</option>
+                  <option value="OK Oklahoma">Oklahoma</option>
+                  <option value="OR Oregon">Oregon</option>
+                  <option value="PA Pennsylvania">Pennsylvania</option>
+                  <option value="RI Rhode Island">Rhode Island</option>
+                  <option value="SC South Carolina">South Carolina</option>
+                  <option value="SD South Dakota">South Dakota</option>
+                  <option value="TN Tennessee">Tennessee</option>
+                  <option value="TX Texas">Texas</option>
+                  <option value="UT Utah">Utah</option>
+                  <option value="VT Vermont">Vermont</option>
+                  <option value="VA Virginia">Virginia</option>
+                  <option value="WA Washington">Washington</option>
+                  <option value="WV West Virginia">West Virginia</option>
+                  <option value="WI Wisconsin">Wisconsin</option>
+                  <option value="WY Wyoming">Wyoming</option>
+                </select>
+
+                <!-- <label class="active" for="name">location</label> -->
+              </div>
+              <div class="input-field">
+                <select class="browser-default dropdownBox" id="activityName">
+                  <option value="" disabled selected>
+                    Choose Your Activity
+                  </option>
+                  <option value="Hiking">Hiking</option>
+                  <option value="Camping">Camping</option>
+                  <option value="Swimming">Swimming</option>
+                  <option value="Fishing">Fishing</option>
+                  <option value="Skiing">Skiing</option>
+                  <option value="Boating">Boating</option>
+                  <option value="Biking">Biking</option>
+                </select>
+
+                <!-- <label class="active" for="name">activity</label> -->
+              </div>
+            </form>
+            <div></div>
+            <button
+              class="btn waves-effect waves-light"
+              id="firstSearch"
+              type="submit"
+              name="action"
+            >
+              Search<i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="javascripts/scriptIndex.js"></script>
+  </body>
+</html>
